@@ -1,0 +1,75 @@
+<!--np NP-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style>
+        mark{
+            background-color: rgb(249, 183, 252);
+        }
+        blockquote{
+            background-color: rgb(184, 165, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Temos aqui um <b>termo em negrito</b> usando a tag B (não semântica)</p>
+    <p>Temos aqui um <strong>termo em destaque</strong> usando a tag STRONG (semântica)</p>
+    <h2>Itálico/Ênfase</h2>
+    <p>Temos aqui um <I>termo em itálico</I> usando a tag I (não semântica)</p>
+    <p>Temos aqui um <em>termo em itálico</em> usando a tag EM (semântica)</p>
+    <!--para termos outro termo marcado da mesma cor, não poodemos fazer
+    esse background color dentro do mark-->
+    <h2>Marcado</h2>
+    <p>Temos aqui um <mark>termo marcado</mark> usando a tag MARK (semântica)</p>
+    <p>Temos aqui outro <mark>termo marcado</mark> usando a tag MARK e o style na head(semântica)</p>
+    <h2>Texto grande e texto pequeno</h2>
+    <!--Texto grande (tag big) está obsoleta-->
+    <p>Temos aqui um <big>texto grande</big> e um <small>texto pequeno</small> usando a tag Big e a small (semântica)</p>
+    <h2>Texto deletado</h2>
+    <p>Temos aqui um <del>texto deletado</del> usando a tag del (semântica)</p>
+    <h2>Texto inserido</h2>
+    <p>Temos aqui um <ins>texto inserido</ins> usando a tag ins (semântica)</p>
+    <p>Também existe o <U>texto sublinhado</U> usando a tag U (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Temos aqui um <sup>texto sobrescrito</sup> usando a tag sup (semântica)</p>
+    <h2>Texto subscrito</h2>
+    <p>Temos aqui um <sub>texto subscrito</sub> usando a tag sub (semântica)</p>
+
+    <h2>Código e texto pré formatado</h2>
+    <pre><code>
+        document.getElementById("botaoEnviar").addEventListener("click", validaFormulario)
+
+        function validaFormulario (){
+            if (document.getElementById("nome").value != "" && document.getElementById("email").value != "" && document.getElementById("telefone").value != "") {
+                alert("Prontinho! você receberá as novidades por email.")
+            }else{
+                alert("Por favor, preencha os campos nome e email.")
+            }
+        }
+    </code></pre>
+
+    <h2>Texto que são citações simples</h2>
+    <p>Existe mais que uma tag para citações. <q>Esse é um exemplo usando a tag q </q>, que é usada no meio do texto</p>
+    <h2>Texto que são citações completas</h2>
+
+    <blockquote cite="https://www.pensador.com/frase/MjUwMDgyOQ/#:~:text=O%20Naruto%20pode%20ser%20um%20pouco%20duro%20%C3%A0s%20vezes%2C%20talvez,nenhum%20amigo%20em%20nossa%20aldeia.">
+        O Naruto pode ser um pouco duro às vezes. Talvez você não saiba disso, 
+        mas o Naruto também cresceu sem pai. Na verdade, ele nunca conheceu nenhum de seus pais,
+        e nunca teve nenhum amigo em nossa aldeia. Mesmo assim eu nunca vi ele chorar,  
+        ficar zangado ou se dar por vencido. Ele está sempre ansioso a melhorar.  
+        <br>Ele quer ser respeitado, é o sonho dele, e o Naruto daria a vida por isso. Sem hesitar!  
+        Meu palpite é que ele se cansou de chorar e decidiu fazer alguma coisa a respeito!
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudado <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> </p>
+    <h2>Texto invertido</h2>
+    <p> <bdo dir="rtl">Leia de trás pra frente</bdo>   </p>
+</body>
+<!--np NP-->
+</html>
